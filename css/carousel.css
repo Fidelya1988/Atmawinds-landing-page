@@ -1,0 +1,21 @@
+.carousel {
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}
+.carousel img {
+    width: 380px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid grey;  
+}      
+.carousel img:first-child {
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

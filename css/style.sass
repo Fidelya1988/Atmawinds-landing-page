@@ -1,0 +1,148 @@
+*, *:before, *:after
+    $main-back: #4e4651
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+
+    font-family: AA-Duke_Fill src url("fonts/AA-Duke_Fill.otf")
+    margin: 0
+    background-color: #313036
+    
+    font-size: 20px
+
+.grid-container
+
+    display: grid
+    width: 100%
+    grid-template-areas: "head head head" "main aside aside" "main aside aside" "foot foot foot"
+
+    grid-template-rows: 60px [header] 1fr [content] auto [footer]
+
+    grid-template-columns: 1fr 200px 200px
+    grid-row-gap: 20px
+    margin: 0
+
+    & .header
+        display: grid
+
+        grid-template-rows: 1fr 1fr
+
+        grid-template-columns: 1fr [navigation] 200px [social] 200px [lang]
+
+        grid-area: head
+
+        justify-items: center
+        color: #fff6c0
+
+    & .header-nav
+        width: 650px
+
+        display: grid
+
+        grid-template-columns: repeat(6, auto)
+
+        grid-row: 2/2
+
+        justify-content: space-around
+
+    & .header-nav__link
+        display: inline-block
+        text-decoration: none
+        grid-column: auto
+        color: #dfcba8
+        font-size: 20px
+
+    & .header-lang
+        grid-column: social/lang
+
+        grid-row: 2/2
+        font-weight: 700
+
+    & .header-lang__link
+        text-decoration: none
+        color: #dfcba8
+        margin: 10px
+
+    & .header-social
+        margin: 0
+        grid-column: navigation/social
+
+        grid-row: 2/2
+        margin-top: -10px
+
+    & .header-social__link
+        margin: 10px
+
+    & .header-social__link__img
+        width: 50px
+
+    & .main
+
+        grid-area: main
+
+    & .main-content
+        display: grid
+
+        grid-template-rows: 2fr auto auto
+        justify-items: center
+
+    & .main-content__img
+
+        grid-row: 1/2
+
+        position: relative
+        & img
+            width: 650px
+
+    & .main-content__other
+
+        grid-row: 3/4
+
+        grid-template-columns: repeat(3, auto)
+        margin-top: 100px
+        max-height: 100%
+        max-width: 650px
+
+    & .aside
+        
+        margin-right: 10px
+        grid-area: aside
+        text-align: center
+        padding-top: 20px
+        
+        
+
+    & .aside-content__img
+        max-width: 70%
+
+    & .aside-content__text
+        font-size: 16px
+        color: #dfcba8
+        text-align: left
+        margin: 10px
+        & p span
+            font-weight: 700
+            font-size: 20px
+            color: black
+        & ul
+            list-style: none
+        & ul li:first-child
+            font-weight: 700
+            margin-bottom: 10px
+
+    & .footer
+
+        grid-area: foot
+        background-color: #f0f3f8
+        border-top: 1px solid #343435
+
+    & .footer-link
+        text-decoration: none
+
+    & .footer-link__text
+        font-size: 10px
+        color: #7c5656
+        text-decoration: none
+
+/*# sourceMappingURL=style.css.map */
