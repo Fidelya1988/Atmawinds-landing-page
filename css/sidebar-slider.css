@@ -1,0 +1,40 @@
+ .slider-page {
+     display: none;
+     color: whitesmoke;
+     text-align: center;
+     margin: 10px;
+     font-size: 18px;
+ }
+
+ .slider-page:first-child {
+     display: block;
+     color: whitesmoke;
+     text-align: left;
+     margin: 10px;
+     font-size: 18px;
+ }
+
+ .contacts {
+     font-size: 20px;
+ }
+
+ .contacts p {
+     display: block;
+ }
+
+ .band-about p span {
+     font-weight: 900;
+     font-size: 20px;
+     color: #f5eeee;
+     text-transform: uppercase;
+ }
+
+ .band-about ul {
+     list-style: none;
+ }
+
+ .band-about ul li:first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+

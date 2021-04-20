@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: AA-Duke_Fill src url("fonts/AA-Duke_Fill.otf");
+  font-family: Arial Narrow, sans-serif;
   margin: 0;
   background-color: #313036;
   font-size: 20px;
@@ -17,8 +17,8 @@ body {
       grid-template-areas: "head head head" "main aside aside" "main aside aside" "foot foot foot";
   -ms-grid-rows: 60px [header] 1fr [content] auto [footer];
       grid-template-rows: 60px [header] 1fr [content] auto [footer];
-  -ms-grid-columns: 1fr 200px 200px;
-      grid-template-columns: 1fr 200px 200px;
+  -ms-grid-columns: 1fr 300px 300px;
+      grid-template-columns: 1fr 300px 300px;
   grid-row-gap: 20px;
   margin: 0;
 }
@@ -28,8 +28,8 @@ body {
   display: grid;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr [navigation] 200px [social] 200px [lang];
-      grid-template-columns: 1fr [navigation] 200px [social] 200px [lang];
+  -ms-grid-columns: 1fr [navigation] 300px [social] 300px [lang];
+      grid-template-columns: 1fr [navigation] 300px [social] 300px [lang];
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -56,6 +56,7 @@ body {
   grid-column: auto;
   color: #dfcba8;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .grid-container .header-lang {
@@ -84,7 +85,7 @@ body {
 }
 
 .grid-container .header-social__link__img {
-  width: 50px;
+  width: 150px;
 }
 
 .grid-container .main {
@@ -124,6 +125,12 @@ body {
   max-width: 650px;
 }
 
+.grid-container .main-content__other__video {
+  border: 4px solid #b4acac;
+  width: 500px;
+  height: 280px;
+}
+
 .grid-container .aside {
   margin-right: 10px;
   -ms-grid-row: 2;
@@ -137,28 +144,6 @@ body {
 
 .grid-container .aside-content__img {
   max-width: 70%;
-}
-
-.grid-container .aside-content__text {
-  font-size: 16px;
-  color: #dfcba8;
-  text-align: left;
-  margin: 10px;
-}
-
-.grid-container .aside-content__text p span {
-  font-weight: 700;
-  font-size: 20px;
-  color: black;
-}
-
-.grid-container .aside-content__text ul {
-  list-style: none;
-}
-
-.grid-container .aside-content__text ul li:first-child {
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 
 .grid-container .footer {
