@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/sidebar-slider.css">
+    <link rel="stylesheet" href="css/nav-pages.css">
     <title>Atmawinds</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
@@ -24,12 +25,13 @@
             </div>
 
             <nav class="header-nav">
-                <a href="#" class="header-nav__link  header-nav__link__firstRow">Головна</a>
-                <a href="./news.html" class="header-nav__link header-nav__link__firstRow">Новини</a>
-                <!-- <a href="./band.html" class="header-nav__link header-nav__link__firstRow">Музиканти</a> -->
-                <a href="" class="header-nav__link header-nav__link__secRow">Відео</a>
-                <a href="#" class="header-nav__link header-nav__link__secRow">Галерея</a>
-                <a href="#" class="header-nav__link header-nav__link__secRow">Контакти</a>
+                <button id="main-button" class="header-nav__link  header-nav__button">Головна</button>
+                <button id="news-button" class="header-nav__link  header-nav__button">Новини</button>
+
+                <a href="" class="header-nav__link link">Відео</a>
+                <a href="#" class="header-nav__link link">Галерея</a>
+                <button id="contacts-button" class="header-nav__link  header-nav__button">Контакти</button>
+                <button id="band-button" class="header-nav__link  header-nav__button">Група</button>
 
 
             </nav>
@@ -43,27 +45,90 @@
         </header>
 
         <main class="main">
-            <div class="main-content">
-                <!-- -->
-                <div class="main-content__img">
-                    <img src="./img/back-img.jpg" alt="header-img" />
+            <div class="main-img">
+                <img src="./img/back-img.jpg" alt="header-img" />
+            </div>
+
+            <div class="main-container">
+
+                <div id= "main-content" class="main-container__content">
+
+                    <div id = "news" class="content-item">
+                        <h1>Новини</h1>
+                        <article>
+                            Цього вечора будемо створювати для вас світлу, дихаючу життям, але маючу глибокий сенс
+                            музику.
+                            Авторські композиції та джазові стандарти - надихаюче! А ще з нами - прекрасна Женя
+                            Пахомова.
+                            <img src="https://scontent-iev1-1.xx.fbcdn.net/v/t1.6435-0/c127.0.967.505a/s526x296/147687618_742843163039272_5044918946291438777_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=340051&_nc_ohc=D3SjZjVDWpQAX9cStyA&_nc_ht=scontent-iev1-1.xx&tp=28&oh=148be7ec2ff95a184b2919f2d6381afe&oe=60A59083" alt="news-img">
+                        </article>
+                    </div>
+                    <div id = "band" class="content-item">
+                        <h1>Про нас</h1>
+                        <article>
+                            <p> <span>Atmawinds</span> – авторський проект – синтез джазу, фольклору, європейської та
+                                індійської
+                                класичної музики.</p>
+                            <p>
+                                Творче кредо ансамблю – сплетіння, взаємопроникнення, діалог різних стилів, культур, що
+                                створює
+                                потік
+                                витонченої музики, натхненної силою чистого духу.
+                            </p>
+                            <p>
+                                Музиканти не асоціюють себе з будь-яким стилем, жанром, канонами і стереотипами, для них
+                                важливі
+                                емоції
+                                і стан.
+                            </p>
+                            <p>
+                                Народжений в рамках музичного перформансу «Темброві антифони» на Gogolfest 2016,
+                                ансамбль
+                                сформувався як
+                                jazz-combo і в такому складі продовжує свою концертну діяльність.
+                            </p>
+                            <p>
+                                В творчій біографії колективу - виступи на різних музичних заходах: фестивалі «Gogol
+                                fest 2016»,
+                                «Осінній джазовий марафон 2016», «Єдність 2018», «Art Jazz 2018», проекті Олексія Когана
+                                "Тема з
+                                варіаціями.Live",та інших майданчиках Києва і України.
+                            </p>
+
+                            <ul>
+                                <li>Склад колективу:</li>
+                                <li>Євген Давиденко – саксофони, флейта</li>
+                                <li>Марія Марченко – вокал</li>
+                                <li>Валерія Марченко – рояль</li>
+                                <li> Іван Литвинов – бас</li>
+
+
+
+                            </ul>
+                        </article>
+                    </div>
+                    <div id = "contacts" class="content-item">
+                        <h1>Новини</h1>
+                        <article>
+                            Atmawinds - авторський проект, синтез джазу, фольклору, європейської
+                            та індійської класичної музики. Народжений в рамках музичного перформансу "Темброві
+                            антифони"
+                            на Gogolfest 2016, ансамбль сформувався як jazz-combo и в такому складі продовжує свою
+                            концертну
+                            діяльність.
+                            Музиканти не асоціюють себе з будь-яким стилем, жанром, канонами і стереотипами, для них
+                            важливі
+                            емоції і стан.
+                            Творче кредо ансамблю: сплетіння, взаємопроникнення, діалог різних стилів, культур, що
+                            створює потік
+                            витонченої музики, натхненної
+                            силою чистого духу .
+                        </article>
+                    </div>
+
                 </div>
 
 
-                <div class="main-content__other">
-
-
-
-
-                    <iframe class="main-content__other__video"
-                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fvideos%2F3237031693058289%2F&show_text=false&width=560"
-                        scrolling="no" frameborder="0" allowfullscreen="true"
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                        allowFullScreen="true" width="500" height="300">
-                    </iframe>
-                    <!--<a href="https://www.facebook.com/events/773154503295982main-content/" class="header-news__link">Детальніше</a>-->
-
-                </div>
             </div>
 
         </main>
@@ -87,58 +152,38 @@
 
             </div>
             <!-- <div class="aside-content js-hide"><img src="img/header-photo (2).png" alt="aside-photo" class="aside-content__img"> -->
-            <div class="band-about slider-page">
-                <p> <span>Atmawinds</span> – авторський проект – синтез джазу, фольклору, європейської та індійської
-                    класичної музики.</p>
-                <p>
-                    Творче кредо ансамблю – сплетіння, взаємопроникнення, діалог різних стилів, культур, що створює
-                    потік
-                    витонченої музики, натхненної силою чистого духу.
-                </p>
-                <p>
-                    Музиканти не асоціюють себе з будь-яким стилем, жанром, канонами і стереотипами, для них важливі
-                    емоції
-                    і стан.
-                </p>
-                <p>
-                    Народжений в рамках музичного перформансу «Темброві антифони» на Gogolfest 2016, ансамбль
-                    сформувався як
-                    jazz-combo і в такому складі продовжує свою концертну діяльність.
-                </p>
-                <p>
-                    В творчій біографії колективу - виступи на різних музичних заходах: фестивалі «Gogol fest 2016»,
-                    «Осінній джазовий марафон 2016», «Єдність 2018», «Art Jazz 2018», проекті Олексія Когана "Тема з
-                    варіаціями.Live",та інших майданчиках Києва і України.
-                </p>
-
-                <ul>
-                    <li>Склад колективу:</li>
-                    <li>Євген Давиденко – саксофони, флейта</li>
-                    <li>Марія Марченко – вокал</li>
-                    <li>Валерія Марченко – рояль</li>
-                    <li> Іван Литвинов – бас</li>
-
-
-
-                </ul>
-
-                
-            </div>
-            <div class = "contacts slider-page">
-
-                <h2>Контакти</h2>
-                <p>@: leraleticia@gmail.com</p>
-                <p>
-                    тел: +38 (050) 3843863
-                    Марченко Валерія
-                </p>
-               
-            </div>
-
+            <!-- <div class="band-about slider-page">
             
+
+
+        </div> -->
+            <div class="contacts slider-page">
+
+            <h1>Контакти</h1>
+            <p>@: leraleticia@gmail.com</p>
+            <p>
+                тел: +38 (050) 3843863
+                Марченко Валерія
+            </p>
+
+        </div>
+
+            <div class="main-content__other">
+
+
+
+
+                <iframe class="main-content__other__video"
+                    src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fvideos%2F3237031693058289%2F&show_text=false&width=560"
+                    scrolling="no" frameborder="0" allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen="true" width="500" height="300">
+                </iframe>
+
+            </div>
             <button class="arrow arrow-right">left</button>
             <button class="arrow arrow-left">right</button>
-          
+
     </div>
 
     </aside>
@@ -155,4 +200,7 @@
 </body>
 <script src="./script/carousel.js"></script>
 <script src="./script/sidebar-slider.js"></script>
+<script src="./script/nav.js"></script>
+
+
 </html>

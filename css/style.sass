@@ -1,14 +1,27 @@
+$fixed-pages-bg: #313036
+$body-bg:  #313036
+$main-color: #ffffff
+$text-color: #dfcba8
+@mixin button-reset 
+   padding: 0
+   border: none
+   font: inherit
+   color: inherit
+   background-color: transparent
+   cursor: pointer
+
 *, *:before, *:after
-    $main-back: #4e4651
+
     -webkit-box-sizing: border-box
     box-sizing: border-box
-
+    
 body
-
+    
+    
     font-family: Arial Narrow, sans-serif
     margin: 0
-    background-color: #313036
-    
+    background-color: $body-bg
+    color: $text-color
     font-size: 20px
 
 .grid-container
@@ -45,7 +58,9 @@ body
         grid-row: 2/2
 
         justify-content: space-around
-
+        &__button
+            @include button-reset
+             
     & .header-nav__link
         display: inline-block
         text-decoration: none
@@ -53,6 +68,8 @@ body
         color: #dfcba8
         font-size: 20px
         text-transform: uppercase
+    & .header-nav__link, .link
+        margin-bottom: 20px
     & .header-lang
         grid-column: social/lang
 
@@ -78,23 +95,40 @@ body
         width: 150px
 
     & .main
-
         grid-area: main
-
-    & .main-content
         display: grid
-
         grid-template-rows: 2fr auto auto
+        grid-template-columns: repeat(10, 1fr)
         justify-items: center
-
-    & .main-content__img
+    & .main-img
 
         grid-row: 1/2
-
-        position: relative
+        position: absolute
+        margin-left: 9%
+        
         & img
             width: 650px
-
+    & .main-container
+        grid-column: 1/span 10
+        grid-row: 1/span 2
+        display: grid
+        grid-template-columns: repeat(10, 1fr)
+        
+        position: relative
+        background-color: $fixed-pages-bg
+        justify-items: center
+        opacity: 75%
+        min-height: 650px
+        &__content 
+           display: none
+           grid-column: 2/ span 8 
+           text-align: center
+           grid-row: 1/ span 3
+           margin: 10%
+           
+           color: $main-color
+          
+   
     & .main-content__other
 
         grid-row: 3/4
@@ -105,8 +139,8 @@ body
         max-width: 650px
         &__video
             border: 4px solid rgb(180, 172, 172)
-            width: 500px
-            height: 280px
+            width: 400px
+            height: 230px
     & .aside
         
         margin-right: 10px
@@ -127,7 +161,7 @@ body
        
 
     & .footer
-
+        
         grid-area: foot
         background-color: #f0f3f8
         border-top: 1px solid #343435

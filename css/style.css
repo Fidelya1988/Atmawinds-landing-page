@@ -7,6 +7,7 @@ body {
   font-family: Arial Narrow, sans-serif;
   margin: 0;
   background-color: #313036;
+  color: #dfcba8;
   font-size: 20px;
 }
 
@@ -50,6 +51,15 @@ body {
       justify-content: space-around;
 }
 
+.grid-container .header-nav__button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .grid-container .header-nav__link {
   display: inline-block;
   text-decoration: none;
@@ -57,6 +67,10 @@ body {
   color: #dfcba8;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+.grid-container .header-nav__link, .grid-container .link {
+  margin-bottom: 20px;
 }
 
 .grid-container .header-lang {
@@ -93,25 +107,56 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: main;
-}
-
-.grid-container .main-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 2fr auto auto;
       grid-template-rows: 2fr auto auto;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
   justify-items: center;
 }
 
-.grid-container .main-content__img {
+.grid-container .main-img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  position: relative;
+  position: absolute;
+  margin-left: 9%;
 }
 
-.grid-container .main-content__img img {
+.grid-container .main-img img {
   width: 650px;
+}
+
+.grid-container .main-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/span 10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/span 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  position: relative;
+  background-color: #313036;
+  justify-items: center;
+  opacity: 75%;
+  min-height: 650px;
+}
+
+.grid-container .main-container__content {
+  display: none;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-column: 2/ span 8;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/ span 3;
+  margin: 10%;
+  color: #ffffff;
 }
 
 .grid-container .main-content__other {
@@ -127,8 +172,8 @@ body {
 
 .grid-container .main-content__other__video {
   border: 4px solid #b4acac;
-  width: 500px;
-  height: 280px;
+  width: 400px;
+  height: 230px;
 }
 
 .grid-container .aside {

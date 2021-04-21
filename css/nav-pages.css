@@ -1,0 +1,8 @@
+.content-item ul {
+    list-style: none;
+}
+
+.content-item {
+    display: none;
+    font-weight: 700
+}
