@@ -10,7 +10,7 @@ $text-color: #dfcba8
    background-color: transparent
    cursor: pointer
 
-*, *:before, *:after
+*, *:before, *:after, *:active, *:focus
 
     -webkit-box-sizing: border-box
     box-sizing: border-box
@@ -60,6 +60,14 @@ body
         justify-content: space-around
         &__button
             @include button-reset
+        &__button:focus
+            
+            outline: none
+        &__button:active
+            outline: none
+            box-shadow:  0 0 5px $text-color
+            
+            
              
     & .header-nav__link
         display: inline-block

@@ -1,4 +1,4 @@
-*, *:before, *:after {
+*, *:before, *:after, *:active, *:focus {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -58,6 +58,16 @@ body {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.grid-container .header-nav__button:focus {
+  outline: none;
+}
+
+.grid-container .header-nav__button:active {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px #dfcba8;
+          box-shadow: 0 0 5px #dfcba8;
 }
 
 .grid-container .header-nav__link {

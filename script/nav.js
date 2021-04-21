@@ -23,20 +23,24 @@ const showElement = (element) => {
 for (let button of buttons) {
     button.addEventListener('click', (event) => {
         button = event.target;
-        console.log(button.id)
-        if (button.id === newsButton) {
 
-            showElement(newsElement);
-        } else if (button.id === bandButton) {
-            showElement(bandElement)
+        switch (button.id) {
+            case newsButton:
+              return  showElement(newsElement);
+            case bandButton:
+              return  showElement(bandElement);
+            case mainButton:
+                for (let contentElement of contentElements) {
+                    contentContainer.style.display = 'none';
+                    contentElement.style.display = 'none';
+                }
         }
-        else if (button.id === mainButton) {
-            for (let contentElement of contentElements) {
-                contentContainer.style.display = 'none';
-                contentElement.style.display = 'none';
-            }
-        }
-    }
+
+
+
+    
+ 
+}
         
     )
 
