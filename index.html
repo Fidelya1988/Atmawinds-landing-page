@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/nav-pages.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Atmawinds</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
@@ -27,7 +28,7 @@
                 <button id="main-button" class="header-nav__link  header-nav__button">Головна</button>
                 <button id="news-button" class="header-nav__link  header-nav__button">Новини</button>
 
-                <a href="" class="header-nav__link link">Відео</a>
+                <button id="movies-button" class="header-nav__link  header-nav__button">Відео</button>
                 <a href="#" class="header-nav__link link">Галерея</a>
                 <button id="contacts-button" class="header-nav__link  header-nav__button">Контакти</button>
                 <button id="band-button" class="header-nav__link  header-nav__button">Група</button>
@@ -37,7 +38,7 @@
 
             <div class="header-social">
                 <a href="https://www.facebook.com/Atmawinds/?ref=page_internal" class="header-social__link"><img
-                        class="header-social__link__img" src="img/fb-letter-gold.png" alt="facebook"></a>
+                        class="header-social__link__img" src="img/grey-fb.png" alt="facebook"></a>
 
             </div>
 
@@ -53,23 +54,27 @@
                 <div id="main-content" class="main-container__content">
 
                     <div id="news" class="content-item">
-                        <div class=" line"></div>
+                        <div class="line"></div>
                         <h1>Новини</h1>
-                        <div class=" line"></div>
+                        <div class="line"></div>
                         <article>
-                          <div class="data-time">31 грудня 2020р.</div>
+                            <div class="data-time">31 грудня 2020р.</div>
                             <p>
-                                Цей рік закінчився для нас в дивовижній атмосфері <span class="highlight">JazzBez</span> фесту,
-                                в надзвичайній компанії музикантів, фотографів, операторів, волонтерів та інших молодих та креативних.
+                                Цей рік закінчився для нас в дивовижній атмосфері <span class="highlight">JazzBez</span>
+                                фесту,
+                                в надзвичайній компанії музикантів, фотографів, операторів, волонтерів та інших молодих
+                                та креативних.
                             </p>
                             <p>Всім щиро дякуємо! Особливо - Луцькому Джаз клубу та Віктору Грисюку. </p>
                             <iframe
-                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fposts%2F2844092512579323&width=500&show_text=true&height=347&appId"
-                            width="500" height="347" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fposts%2F2844092512579323&width=500&show_text=true&height=347&appId"
+                                width="500" height="347" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                             </iframe>
                         </article>
                     </div>
-                    <div id="band" class="content-item"> 
+                    <div id="band" class="content-item">
                         <div class="line"></div>
                         <h1>Про нас</h1>
                         <div class="line"></div>
@@ -125,7 +130,9 @@
                             Марченко Валерія
                         </p>
                     </div>
-
+                    <div id="movies" class="content-item">
+                        <iframe src="./movies.html" frameborder="0" width="700" height="650"></iframe>
+                        </div>
                 </div>
 
 
@@ -133,9 +140,10 @@
 
         </main>
         <aside class="aside">
+            <div class="aside-content">
             <div class="carousel">
-
-
+                
+                
                 <img src="./Gallery-imgs/90250318_2588526968135880_1304747314325225472_n.jpg" alt="carousel-img"
                     class="carousel-images_item ">
                 <img src="./Gallery-imgs/90250318_2588527001469210_1932932018471960576_n.jpg" alt="carousel-img"
@@ -158,19 +166,26 @@
 
 
 
-            <div class="aside-content">
+            
 
 
 
                 <div class="aside-content__item">
                     <div class="line-left line"></div>
-                    <h2>Tashi Delek</h2>
+                    <h2>Video Presentation</h2>
                     <div class="line-right line"></div>
-                    <iframe id="tashi-delek"
+                    <!-- <iframe id="tashi-delek" class ="aside-video"
                         src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fvideos%2F3237031693058289%2F&show_text=false&width=560"
                         scrolling="no" frameborder="0" allowfullscreen="true"
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                         allowFullScreen="true" width="500" height="300">
+                    </iframe> -->
+                    <iframe id="video-presentation" class ="aside-video"
+                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FAtmawinds%2Fvideos%2F2087384024916846%2F&show_text=false&width=560"
+                        width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true">
                     </iframe>
                 </div>
 
@@ -180,17 +195,18 @@
 
     </aside>
     <footer class="footer">
-        <a class="footer-link" href='https://ru.freepik.com/vectors/logo'>
-            <span class="footer-link__text">Logo вектор создан(а) alicia_mb - ru.freepik.com</span>
+        <a class="footer-link" href="http://www.freepik.com">
+            <span class="footer-link__text">Logo designed by saragnzalez</span>
 
         </a>
+        <span class="footer-link__text">Develop by Oleksandra Marchenko marchenkooDev@gmail.com</span>
 
     </footer>
     </div>
 
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v10.0" nonce="XFigo5Ig">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v10.0"
+        nonce="XFigo5Ig">
         </script>
 </body>
 <script src="./script/carousel.js"></script>

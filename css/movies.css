@@ -1,0 +1,20 @@
+.movies {
+    color: #dfcba8;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.movies-item {
+    width: 300px;
+    text-align: center;
+   
+    display: inline-block;
+    margin: 1%;
+}  
+
+.movies-item  iframe {
+    width: 300px;
+    height: 170px;
+    border: 1px solid #fcfcff;
+    box-shadow:  0 0 5px #f4f4f5;
+}

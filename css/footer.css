@@ -1,0 +1,18 @@
+.footer {
+position: relative;        
+grid-area: foot;
+margin-top: 5%;
+
+}
+
+.footer-link {
+text-decoration: none;
+margin: 10px;
+}
+
+.footer-link__text {
+font-size: 10px;
+color: #858282;
+text-decoration: none;
+}
+
