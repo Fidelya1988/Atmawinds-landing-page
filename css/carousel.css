@@ -5,14 +5,18 @@
     margin-left: auto;
     margin-right: auto;
     
+   
+    
 }
 .carousel img {
     width: 400px;
     display: none;
     
-    border: 4px solid rgb(180, 172, 172);  
+    border: 1px solid #fcfcff;
+    box-shadow:  0 0 5px #f4f4f5; 
 }      
 .carousel img:first-child {
-  
+    border: 1px solid #fcfcff;
+    box-shadow:  0 0 5px #f4f4f5;
     display: block;
 }
