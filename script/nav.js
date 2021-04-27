@@ -12,13 +12,10 @@ const bandElement = contentContainer.querySelector('#band');
 const contactsElement = contentContainer.querySelector('#contacts');
 const moviesElement = contentContainer.querySelector('#movies');
 const backgroundImage = document.querySelector('#background-img');
-const sidebarContent = document.querySelector('.aside-content');
-console.dir(moviesElement);
+
+
 contentContainer.parentElement.style.display = 'none';
-const changeElementContent = (element, newContent) => {
-    element.style.display = 'none';
-    element.parentElement.appendChild(newContent);
-}
+
 const showElement = (element, hideImg) => {
     contentContainer.parentElement.style.display = 'block';
     contentContainer.style.display = 'block';
@@ -40,13 +37,28 @@ const showElement = (element, hideImg) => {
     }
 }
 
+const manageElementAppearance = (element, button, targetButton) => {
+    
 
+  
+    if (button.id === targetButton) {
+        element.style.display = 'none';
+
+    }
+    if (button.id != targetButton) {
+        element.style.display = 'block'
+    }
+}
 
 
 for (let button of buttons) {
+    const sidebarMovie = document.querySelector('.sidebar-movie');
+       
     button.addEventListener('click', (event) => {
         button = event.target;
-         console.dir(button)
+        
+        manageElementAppearance(sidebarMovie, button,moviesButton);
+       
         switch (button.id) {
             case newsButton:
                 return showElement(newsElement, true);
@@ -58,6 +70,11 @@ for (let button of buttons) {
             case moviesButton:
 
                 return showElement(moviesElement, true);
+
+
+
+
+
             case mainButton:
                 for (let contentElement of contentElements) {
                     contentContainer.parentElement.style.display = 'none';
@@ -65,13 +82,14 @@ for (let button of buttons) {
                     contentElement.style.display = 'none';
                     backgroundImage.style.display = 'block';
                 }
-               
-                }
-                
+
         }
+
+    }
 
 
     )
+
 
 }
 
