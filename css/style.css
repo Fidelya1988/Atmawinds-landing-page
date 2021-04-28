@@ -64,10 +64,14 @@ body {
   outline: none;
 }
 
-.grid-container .header-nav__button:active {
+.grid-container .header-nav__button:active:hover {
   outline: none;
-  -webkit-box-shadow: 0 0 5px #dfcba8;
-          box-shadow: 0 0 5px #dfcba8;
+  text-shadow: 0 0 5px #dfcba8;
+}
+
+.grid-container .header-nav__button:hover {
+  outline: none;
+  text-shadow: 0 0 5px #dfcba8;
 }
 
 .grid-container .header-nav__link {
